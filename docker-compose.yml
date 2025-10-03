@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  diarization:
+    build: .
+    container_name: diarization_pipeline
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - HF_TOKEN=${HF_TOKEN}
+      - WHISPER_API_ENDPOINT=${WHISPER_API_ENDPOINT}
+      - LANGUAGE=${LANGUAGE}
+    ports:
+      - "8001:8001"  # FastAPI
+      - "8501:8501"  # Streamlit
+    volumes:
+      - .:/app           # <--- ADDED/MODIFIED THIS LINE: Mounts your current host directory into /app in the container
+      - ./uploads:/app/uploads
+      - ./logs:/app/logs
+      - ./outputs:/app/outputs
+    command: bash -c "uvicorn api:app --host 0.0.0.0 --port 8001 & streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0 && wait"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

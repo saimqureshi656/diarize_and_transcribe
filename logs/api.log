@@ -1,0 +1,253 @@
+2025-10-02 15:41:38,158 - api - INFO - Received file: 01105741.wav
+2025-10-02 15:41:38,160 - api - INFO - File saved: /app/uploads/9ae22dd5-2eb3-481c-8561-62418e901c3f_01105741.wav
+2025-10-02 15:41:38,767 - huggingface_hub._login - WARNING - Note: Environment variable`HF_TOKEN` is set and is the current active token independently from the token you've just configured.
+2025-10-02 15:41:38,767 - pipeline - INFO - ✓ Successfully logged into Hugging Face Hub.
+2025-10-02 15:41:38,768 - api - INFO - Starting pipeline for job: 9ae22dd5-2eb3-481c-8561-62418e901c3f
+2025-10-02 15:41:38,768 - pipeline - INFO - 
+============================================================
+2025-10-02 15:41:38,768 - pipeline - INFO - STARTING DIARIZATION PIPELINE
+2025-10-02 15:41:38,768 - pipeline - INFO - Input: /app/uploads/9ae22dd5-2eb3-481c-8561-62418e901c3f_01105741.wav
+2025-10-02 15:41:38,768 - pipeline - INFO - Time: 2025-10-02 15:41:38
+2025-10-02 15:41:38,768 - pipeline - INFO - ============================================================
+
+2025-10-02 15:41:38,768 - pipeline - INFO - ============================================================
+2025-10-02 15:41:38,768 - pipeline - INFO - STEP 1: BEEP/RING DETECTION & REMOVAL
+2025-10-02 15:41:38,768 - pipeline - INFO - ============================================================
+2025-10-02 15:41:39,056 - pipeline - INFO - ⏳ Analyzing first 3.0s for beeps/rings...
+2025-10-02 15:41:39,060 - pipeline - INFO - ✓ Removed 3.0s from beginning
+2025-10-02 15:41:39,061 - pipeline - INFO - 
+============================================================
+2025-10-02 15:41:39,061 - pipeline - INFO - STEP 2: VOICE ACTIVITY DETECTION (VAD)
+2025-10-02 15:41:39,061 - pipeline - INFO - ============================================================
+2025-10-02 15:41:39,061 - pipeline - INFO - ⏳ Loading VAD model...
+2025-10-02 15:41:39,913 - pipeline - INFO - ⏳ Running VAD on audio...
+2025-10-02 15:41:40,611 - pipeline - INFO - ✓ VAD complete! Total speech: 210.14s
+2025-10-02 15:41:40,611 - pipeline - INFO - 
+============================================================
+2025-10-02 15:41:40,611 - pipeline - INFO - STEP 3: SPEAKER DIARIZATION
+2025-10-02 15:41:40,611 - pipeline - INFO - ============================================================
+2025-10-02 15:41:40,611 - pipeline - INFO - ⏳ Loading diarization pipeline...
+2025-10-02 15:41:42,297 - pipeline - INFO - ✓ Diarization pipeline loaded!
+2025-10-02 15:41:42,297 - pipeline - INFO - ⏳ Processing diarization...
+2025-10-02 15:41:53,749 - pipeline - INFO - 
+============================================================
+2025-10-02 15:41:53,749 - pipeline - INFO - STEP 3.5: RAW DIARIZATION TIMESTAMPS
+2025-10-02 15:41:53,749 - pipeline - INFO - ============================================================
+2025-10-02 15:41:53,749 - pipeline - INFO - [0000.008s - 0000.874s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,749 - pipeline - INFO - [0000.857s - 0001.893s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0000.993s - 0001.486s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,750 - pipeline - INFO - [0001.689s - 0002.572s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,750 - pipeline - INFO - [0003.115s - 0005.883s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0006.307s - 0008.871s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0006.664s - 0007.241s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,750 - pipeline - INFO - [0008.854s - 0009.567s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,750 - pipeline - INFO - [0009.499s - 0014.219s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0014.677s - 0017.496s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0015.136s - 0015.696s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,750 - pipeline - INFO - [0017.852s - 0024.253s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0024.525s - 0026.019s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0025.526s - 0026.986s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,750 - pipeline - INFO - [0027.258s - 0029.601s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0029.499s - 0031.163s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,750 - pipeline - INFO - [0031.095s - 0032.470s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,750 - pipeline - INFO - [0032.470s - 0034.593s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,750 - pipeline - INFO - [0034.134s - 0038.548s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0038.548s - 0039.194s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,751 - pipeline - INFO - [0039.194s - 0039.211s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0039.211s - 0039.278s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,751 - pipeline - INFO - [0039.278s - 0039.295s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0039.295s - 0039.975s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,751 - pipeline - INFO - [0039.975s - 0044.949s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0044.949s - 0044.966s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,751 - pipeline - INFO - [0044.966s - 0045.000s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0045.000s - 0045.340s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,751 - pipeline - INFO - [0045.340s - 0045.357s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0045.747s - 0056.902s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,751 - pipeline - INFO - [0057.343s - 0060.246s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0060.246s - 0063.183s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,751 - pipeline - INFO - [0063.183s - 0064.966s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0065.424s - 0069.431s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,751 - pipeline - INFO - [0069.431s - 0074.389s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,751 - pipeline - INFO - [0074.728s - 0077.275s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,752 - pipeline - INFO - [0077.275s - 0079.329s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0079.601s - 0080.484s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,752 - pipeline - INFO - [0080.484s - 0089.652s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0090.110s - 0102.504s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0102.657s - 0105.866s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0106.222s - 0111.061s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0111.401s - 0111.944s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0111.978s - 0112.419s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,752 - pipeline - INFO - [0112.419s - 0117.530s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0117.971s - 0121.604s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0121.604s - 0126.596s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,752 - pipeline - INFO - [0126.952s - 0128.192s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,752 - pipeline - INFO - [0127.377s - 0132.046s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0132.385s - 0137.801s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0138.226s - 0143.319s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,752 - pipeline - INFO - [0143.761s - 0147.020s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0147.326s - 0149.465s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0149.805s - 0153.183s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0153.421s - 0153.812s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0153.964s - 0155.883s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0156.290s - 0161.435s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0160.688s - 0166.070s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,753 - pipeline - INFO - [0166.171s - 0167.801s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,753 - pipeline - INFO - [0167.767s - 0178.616s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0178.803s - 0182.080s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0182.199s - 0183.387s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0183.744s - 0185.306s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0184.728s - 0187.275s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,753 - pipeline - INFO - [0187.411s - 0189.975s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,753 - pipeline - INFO - [0189.975s - 0190.331s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0190.671s - 0197.139s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,753 - pipeline - INFO - [0197.139s - 0198.175s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,753 - pipeline - INFO - [0198.175s - 0201.316s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,754 - pipeline - INFO - [0200.772s - 0202.742s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,754 - pipeline - INFO - [0202.742s - 0205.866s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,754 - pipeline - INFO - [0206.002s - 0207.937s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,754 - pipeline - INFO - [0207.937s - 0210.127s] Speaker: SPEAKER_01
+2025-10-02 15:41:53,754 - pipeline - INFO - [0209.431s - 0210.008s] Speaker: SPEAKER_00
+2025-10-02 15:41:53,755 - pipeline - INFO - 
+============================================================
+2025-10-02 15:41:53,755 - pipeline - INFO - STEP 4: TRANSCRIPTION
+2025-10-02 15:41:53,755 - pipeline - INFO - ============================================================
+2025-10-02 15:41:53,755 - pipeline - INFO - ⏳ Transcribing segment 1...
+2025-10-02 15:41:54,290 - pipeline - INFO - [0000.008s - 0000.874s] SPEAKER_00: بھالی بھالی
+2025-10-02 15:41:54,290 - pipeline - INFO - ⏳ Transcribing segment 2...
+2025-10-02 15:41:54,790 - pipeline - INFO - [0000.857s - 0001.893s] SPEAKER_01: السلام علیکم
+2025-10-02 15:41:54,790 - pipeline - INFO - [0000.993s - 0001.486s] SPEAKER_00: [Skipped: Too short (0.49s)]
+2025-10-02 15:41:54,790 - pipeline - INFO - ⏳ Transcribing segment 4...
+2025-10-02 15:41:55,302 - pipeline - INFO - [0001.689s - 0002.572s] SPEAKER_00: لگتا ہے
+2025-10-02 15:41:55,304 - pipeline - INFO - ⏳ Transcribing segment 5...
+2025-10-02 15:41:56,080 - pipeline - INFO - [0003.115s - 0005.883s] SPEAKER_01: سر ٹی سی ار سیٹ آفیس کراچی سے راہیل بات کر رہا ہوں
+2025-10-02 15:41:56,082 - pipeline - INFO - ⏳ Transcribing segment 6...
+2025-10-02 15:41:56,731 - pipeline - INFO - [0006.307s - 0008.871s] SPEAKER_01: مسٹر کاف صاحب سے بات ہو رہی ہے
+2025-10-02 15:41:56,732 - pipeline - INFO - ⏳ Transcribing segment 7...
+2025-10-02 15:41:57,238 - pipeline - INFO - [0006.664s - 0007.241s] SPEAKER_00: بھائی
+2025-10-02 15:41:57,241 - pipeline - INFO - ⏳ Transcribing segment 8...
+2025-10-02 15:41:57,745 - pipeline - INFO - [0008.854s - 0009.567s] SPEAKER_00: جی
+2025-10-02 15:41:57,746 - pipeline - INFO - ⏳ Transcribing segment 9...
+2025-10-02 15:41:58,521 - pipeline - INFO - [0009.499s - 0014.219s] SPEAKER_01: اچھا سر یہ آپ کی جو ship point data بھی ہماری بات ہوئی ہے آپریشن سے
+2025-10-02 15:41:58,522 - pipeline - INFO - ⏳ Transcribing segment 10...
+2025-10-02 15:41:59,229 - pipeline - INFO - [0014.677s - 0017.496s] SPEAKER_01: تو آپریشن بھولوں نے کہا کہ یہ شپمنٹ ہمیں مل گئی ہے
+2025-10-02 15:41:59,230 - pipeline - INFO - ⏳ Transcribing segment 11...
+2025-10-02 15:41:59,754 - pipeline - INFO - [0015.136s - 0015.696s] SPEAKER_00: بھائی
+2025-10-02 15:41:59,754 - pipeline - INFO - ⏳ Transcribing segment 12...
+2025-10-02 15:42:00,791 - pipeline - INFO - [0017.852s - 0024.253s] SPEAKER_01: لیکن اس میں نا جو کے پانچ پیش ملیں ایک پیش شوٹ ہے مجھے بتائیں ایک پیش آپ کو آپ کے کسٹمر کو ریسیو ہو گیا ہے
+2025-10-02 15:42:00,791 - pipeline - INFO - ⏳ Transcribing segment 13...
+2025-10-02 15:42:01,378 - pipeline - INFO - [0024.525s - 0026.019s] SPEAKER_01: آپ نے صبح بتایا تھا
+2025-10-02 15:42:01,380 - pipeline - INFO - ⏳ Transcribing segment 14...
+2025-10-02 15:42:01,898 - pipeline - INFO - [0025.526s - 0026.986s] SPEAKER_00: ہلو
+2025-10-02 15:42:01,899 - pipeline - INFO - ⏳ Transcribing segment 15...
+2025-10-02 15:42:02,589 - pipeline - INFO - [0027.258s - 0029.601s] SPEAKER_01: آواز نہیں آرہی ہے آپ کی سر آواز بریک ہو رہی ہے
+2025-10-02 15:42:02,590 - pipeline - INFO - ⏳ Transcribing segment 16...
+2025-10-02 15:42:03,204 - pipeline - INFO - [0029.499s - 0031.163s] SPEAKER_00: میں نے آپ کو صبح یہی بتایا تھا۔
+2025-10-02 15:42:03,206 - pipeline - INFO - ⏳ Transcribing segment 17...
+2025-10-02 15:42:03,789 - pipeline - INFO - [0031.095s - 0032.470s] SPEAKER_01: اوازنی اریا کیا لو
+2025-10-02 15:42:03,790 - pipeline - INFO - ⏳ Transcribing segment 18...
+2025-10-02 15:42:04,399 - pipeline - INFO - [0032.470s - 0034.593s] SPEAKER_00: صبح میں نے آپ کو یہ ہی بتایا تھا
+2025-10-02 15:42:04,401 - pipeline - INFO - ⏳ Transcribing segment 19...
+2025-10-02 15:42:05,207 - pipeline - INFO - [0034.134s - 0038.548s] SPEAKER_01: صاحب مجھے بتا دیں گے کیا ہے آپ نے بتایا تھا کہ ایک بیس مل گیا ہے
+2025-10-02 15:42:05,208 - pipeline - INFO - ⏳ Transcribing segment 20...
+2025-10-02 15:42:05,769 - pipeline - INFO - [0038.548s - 0039.194s] SPEAKER_00: میں نے آپ کو
+2025-10-02 15:42:05,770 - pipeline - INFO - [0039.194s - 0039.211s] SPEAKER_01: [Skipped: Too short (0.02s)]
+2025-10-02 15:42:05,770 - pipeline - INFO - [0039.211s - 0039.278s] SPEAKER_00: [Skipped: Too short (0.07s)]
+2025-10-02 15:42:05,771 - pipeline - INFO - [0039.278s - 0039.295s] SPEAKER_01: [Skipped: Too short (0.02s)]
+2025-10-02 15:42:05,771 - pipeline - INFO - ⏳ Transcribing segment 24...
+2025-10-02 15:42:06,353 - pipeline - INFO - [0039.295s - 0039.975s] SPEAKER_00: میں آپ کو یہی کہتا ہوں
+2025-10-02 15:42:06,355 - pipeline - INFO - ⏳ Transcribing segment 25...
+2025-10-02 15:42:07,148 - pipeline - INFO - [0039.975s - 0044.949s] SPEAKER_01: آپ کی آواز بار بار بھروک بھروک کے آرہی ہے، صحیح نہیں آرہی ہے
+2025-10-02 15:42:07,149 - pipeline - INFO - [0044.949s - 0044.966s] SPEAKER_00: [Skipped: Too short (0.02s)]
+2025-10-02 15:42:07,149 - pipeline - INFO - [0044.966s - 0045.000s] SPEAKER_01: [Skipped: Too short (0.03s)]
+2025-10-02 15:42:07,149 - pipeline - INFO - [0045.000s - 0045.340s] SPEAKER_00: [Skipped: Too short (0.34s)]
+2025-10-02 15:42:07,149 - pipeline - INFO - [0045.340s - 0045.357s] SPEAKER_01: [Skipped: Too short (0.02s)]
+2025-10-02 15:42:07,150 - pipeline - INFO - ⏳ Transcribing segment 30...
+2025-10-02 15:42:08,654 - pipeline - INFO - [0045.747s - 0056.902s] SPEAKER_00: جو آپ کہہ رہے ہیں جو ایمیل میں جو ساری چیزیں ڈسکرس ہوئی رہی ہیں وہی مسئلہ ہے اسی لیے وہ ابھی تک انہوں نے ڈیلیور نہیں کیا کہ ان کو ملی نہیں رہا وہ ایک پیس کیونکہ وہ یہ خود پہلے ڈیلیور کر چکے
+2025-10-02 15:42:08,655 - pipeline - INFO - ⏳ Transcribing segment 31...
+2025-10-02 15:42:09,395 - pipeline - INFO - [0057.343s - 0060.246s] SPEAKER_01: اچھا یہ بتائیں کہ جو آپ نے چھے پیس بک کرائے تھے
+2025-10-02 15:42:09,397 - pipeline - INFO - ⏳ Transcribing segment 32...
+2025-10-02 15:42:10,127 - pipeline - INFO - [0060.246s - 0063.183s] SPEAKER_00: یہ جو سگمنٹ رکھی ہوئی ہے یہ اس کے چھے پیس ہیں۔
+2025-10-02 15:42:10,128 - pipeline - INFO - ⏳ Transcribing segment 33...
+2025-10-02 15:42:10,732 - pipeline - INFO - [0063.183s - 0064.966s] SPEAKER_01: پی پی سے اچھا ٹھیک ہے
+2025-10-02 15:42:10,733 - pipeline - INFO - ⏳ Transcribing segment 34...
+2025-10-02 15:42:11,556 - pipeline - INFO - [0065.424s - 0069.431s] SPEAKER_01: اچھا آپ مجھے بتانے پہلے کوئی شپنٹ ڈیلیور ہوئی ہے
+2025-10-02 15:42:11,557 - pipeline - INFO - ⏳ Transcribing segment 35...
+2025-10-02 15:42:12,217 - pipeline - INFO - [0069.431s - 0074.389s] SPEAKER_00: جی اس کے ساتھ کی ہی تھی وہ shipment اور
+2025-10-02 15:42:12,217 - pipeline - INFO - ⏳ Transcribing segment 36...
+2025-10-02 15:42:12,959 - pipeline - INFO - [0074.728s - 0077.275s] SPEAKER_00: اس میں آٹھ پیس تھے اس کی جگہ نو پیس ڈیلیور ہوا۔
+2025-10-02 15:42:12,960 - pipeline - INFO - ⏳ Transcribing segment 37...
+2025-10-02 15:42:13,641 - pipeline - INFO - [0077.275s - 0079.329s] SPEAKER_01: اچھا یہ والا پیس اس میں آگیا ہوگا پھر
+2025-10-02 15:42:13,642 - pipeline - INFO - ⏳ Transcribing segment 38...
+2025-10-02 15:42:14,199 - pipeline - INFO - [0079.601s - 0080.484s] SPEAKER_00: اس میں چلا گیا۔
+2025-10-02 15:42:14,202 - pipeline - INFO - ⏳ Transcribing segment 39...
+2025-10-02 15:42:15,388 - pipeline - INFO - [0080.484s - 0089.652s] SPEAKER_01: اچھا یہ confusion یہی ہو رہی ہے کیونکہ آج نا staff نہیں آتا نا سندے والے دن تو وہ ابھی میری بات ہوئی ہے تو وہ یہی بول رہے ہیں کہ یار ایک پی سمیں مل نہیں رہا نا
+2025-10-02 15:42:15,390 - pipeline - INFO - ⏳ Transcribing segment 40...
+2025-10-02 15:42:16,947 - pipeline - INFO - [0090.110s - 0102.504s] SPEAKER_01: میں نے کہا کہ میں کسٹمبر سے پہلے بات کرتا ہوں پھر میں آپ کو بتاتا ہوں تو اب میں ان کو بتا دیتا ہوں کہ یہ پانچ پیس جو ہے یہ آپ اس کو ارینج کروائیں جو ہے وہ ایک پیس جو ہے نا وہ آٹھ پیس جو ڈلیور ہوئے تھے اس میں یہ نو آگیا ہے ایک
+2025-10-02 15:42:16,948 - pipeline - INFO - ⏳ Transcribing segment 41...
+2025-10-02 15:42:17,727 - pipeline - INFO - [0102.657s - 0105.866s] SPEAKER_01: یہ جو پیس تھا اس میں آگیا ہے آٹھ والے میں میں ان کو بتا دیتا ہوں
+2025-10-02 15:42:17,728 - pipeline - INFO - ⏳ Transcribing segment 42...
+2025-10-02 15:42:18,666 - pipeline - INFO - [0106.222s - 0111.061s] SPEAKER_01: اچھا یہ میری ضائع صاحب کو میں نے کال کیا ہوں بہت دیر سے کال کر رہا ہوں لیکن وہ اٹھا نہیں رہنا
+2025-10-02 15:42:18,667 - pipeline - INFO - ⏳ Transcribing segment 43...
+2025-10-02 15:42:19,169 - pipeline - INFO - [0111.401s - 0111.944s] SPEAKER_01: مستقل
+2025-10-02 15:42:19,170 - pipeline - INFO - [0111.978s - 0112.419s] SPEAKER_00: [Skipped: Too short (0.44s)]
+2025-10-02 15:42:19,170 - pipeline - INFO - ⏳ Transcribing segment 45...
+2025-10-02 15:42:20,171 - pipeline - INFO - [0112.419s - 0117.530s] SPEAKER_01: اگر آپ سے ان کا کوئی رابطہ ہوتا ہے تو ان کو بتا دیں سر یہ آج کیونکہ ہماری ڈیلیوری آپریٹ نہیں ہوتی نا
+2025-10-02 15:42:20,172 - pipeline - INFO - ⏳ Transcribing segment 46...
+2025-10-02 15:42:21,025 - pipeline - INFO - [0117.971s - 0121.604s] SPEAKER_01: تو کیا سر آپ اسے گودارش ہوگی کہ آپ آنکھیں کلیک کرسکتے ہیں ہمارے آفس سے؟
+2025-10-02 15:42:21,026 - pipeline - INFO - ⏳ Transcribing segment 47...
+2025-10-02 15:42:21,898 - pipeline - INFO - [0121.604s - 0126.596s] SPEAKER_00: بھائی ان کو شیخ پورا سے آنا پڑے گا آپ کچھ کر کے آج ہی دیلیور کروا دیں تو
+2025-10-02 15:42:21,899 - pipeline - INFO - ⏳ Transcribing segment 48...
+2025-10-02 15:42:22,473 - pipeline - INFO - [0126.952s - 0128.192s] SPEAKER_00: موڈ پرکاریو
+2025-10-02 15:42:22,474 - pipeline - INFO - ⏳ Transcribing segment 49...
+2025-10-02 15:42:23,343 - pipeline - INFO - [0127.377s - 0132.046s] SPEAKER_01: نہیں نہیں ایسی بات نہیں ہے سر بالکل میں معذرت چاہوں گا آپ کو ہماری وجہ سے رحمت ہوئی ہے
+2025-10-02 15:42:23,344 - pipeline - INFO - ⏳ Transcribing segment 50...
+2025-10-02 15:42:24,374 - pipeline - INFO - [0132.385s - 0137.801s] SPEAKER_01: اے اکچولی ادھر دیکھیں یہ شپمنٹ ہے نا اس کی کل راج سے میل چل دی ہے اور میری چھوٹی ہوتی سنڈے آف ہوتا ہے
+2025-10-02 15:42:24,375 - pipeline - INFO - ⏳ Transcribing segment 51...
+2025-10-02 15:42:25,402 - pipeline - INFO - [0138.226s - 0143.319s] SPEAKER_01: مجھے میرے مینیجر نے رات کو ہی جو ہے نا میں صبح فجر میں اٹھا ہوں نماز کے لیے تو میں نے یہ واٹس ایپ چیک کیا نا
+2025-10-02 15:42:25,404 - pipeline - INFO - ⏳ Transcribing segment 52...
+2025-10-02 15:42:26,210 - pipeline - INFO - [0143.761s - 0147.020s] SPEAKER_01: تو آپ کا آپ کی شپمنٹ کا میسیج آیا تھا کہ آپ فوران آفیس جائیں
+2025-10-02 15:42:26,210 - pipeline - INFO - ⏳ Transcribing segment 53...
+2025-10-02 15:42:26,937 - pipeline - INFO - [0147.326s - 0149.465s] SPEAKER_01: اور یہ مسئلہ سارٹ آؤٹ کر کے مجھے اپڈیٹ دینا
+2025-10-02 15:42:26,938 - pipeline - INFO - ⏳ Transcribing segment 54...
+2025-10-02 15:42:27,674 - pipeline - INFO - [0149.805s - 0153.183s] SPEAKER_01: آپ بلیو میں یقین کریں میں آیا ہوں چھٹی پہ نا تو اب یہ ہے کہ
+2025-10-02 15:42:27,675 - pipeline - INFO - [0153.421s - 0153.812s] SPEAKER_01: [Skipped: Too short (0.39s)]
+2025-10-02 15:42:27,676 - pipeline - INFO - ⏳ Transcribing segment 56...
+2025-10-02 15:42:28,352 - pipeline - INFO - [0153.964s - 0155.883s] SPEAKER_01: ایک اوپرا والا آفیس ہمارا بند ہوتا ہے
+2025-10-02 15:42:28,353 - pipeline - INFO - ⏳ Transcribing segment 57...
+2025-10-02 15:42:29,192 - pipeline - INFO - [0156.290s - 0161.435s] SPEAKER_01: آج delivery operate نہیں ہوتی ہے میں پھر بھی ایک بار پوچھ لوں گا اگر ہو جائے گی
+2025-10-02 15:42:29,193 - pipeline - INFO - ⏳ Transcribing segment 58...
+2025-10-02 15:42:30,158 - pipeline - INFO - [0160.688s - 0166.070s] SPEAKER_00: بھائی میری بات سنیں یہ لاہور رکھا ہے نا تو شیخ اکبر آفیس کا تو کوئی کام ہی نہیں ہے
+2025-10-02 15:42:30,159 - pipeline - INFO - ⏳ Transcribing segment 59...
+2025-10-02 15:42:30,836 - pipeline - INFO - [0166.171s - 0167.801s] SPEAKER_00: آپ لاہور سے ڈائریک ڈیلیور کروا دے
+2025-10-02 15:42:30,838 - pipeline - INFO - ⏳ Transcribing segment 60...
+2025-10-02 15:42:32,285 - pipeline - INFO - [0167.767s - 0178.616s] SPEAKER_01: سر میں وہی عرصہ عرص کر رہا ہوں میں ابھی commitment نہیں کر سکتا میں پوچھ لیتا ہوں کیونکہ آج کوئی بھی جو کہ courier نہیں آتا نا تو delivery آج نہیں ہوتی ہے یہ specially مجھے یہاں پہ بھیجا گیا کہ آپ فورینڈ اسٹیلر کو sort out کریں
+2025-10-02 15:42:32,286 - pipeline - INFO - ⏳ Transcribing segment 61...
+2025-10-02 15:42:33,109 - pipeline - INFO - [0178.803s - 0182.080s] SPEAKER_01: اچھے سی کراتے ہیں کچھ بھی کراتے ہیں انویٹیشن کارڈ ہے کسٹمر ہے
+2025-10-02 15:42:33,111 - pipeline - INFO - ⏳ Transcribing segment 62...
+2025-10-02 15:42:33,690 - pipeline - INFO - [0182.199s - 0183.387s] SPEAKER_01: اپروچ کر رہے گل سے
+2025-10-02 15:42:33,691 - pipeline - INFO - ⏳ Transcribing segment 63...
+2025-10-02 15:42:34,271 - pipeline - INFO - [0183.744s - 0185.306s] SPEAKER_01: میں اسی وجہ سے آیا ہوں
+2025-10-02 15:42:34,272 - pipeline - INFO - ⏳ Transcribing segment 64...
+2025-10-02 15:42:34,980 - pipeline - INFO - [0184.728s - 0187.275s] SPEAKER_00: بھائی کل سے نہیں میں تین دن سے خوار ہو رہا ہوں
+2025-10-02 15:42:34,981 - pipeline - INFO - ⏳ Transcribing segment 65...
+2025-10-02 15:42:35,630 - pipeline - INFO - [0187.411s - 0189.975s] SPEAKER_00: 27 تاریخ کو میں نے گمپلین گی تھی۔
+2025-10-02 15:42:35,631 - pipeline - INFO - [0189.975s - 0190.331s] SPEAKER_01: [Skipped: Too short (0.36s)]
+2025-10-02 15:42:35,632 - pipeline - INFO - ⏳ Transcribing segment 67...
+2025-10-02 15:42:36,656 - pipeline - INFO - [0190.671s - 0197.139s] SPEAKER_01: مجھے بتائیں سر ہم سیلف کلیکشن اگر انکیس ڈیلیوری نہیں ہوتی تو کیا آپ آکے کلیک کرسکتے ہیں؟
+2025-10-02 15:42:36,656 - pipeline - INFO - ⏳ Transcribing segment 68...
+2025-10-02 15:42:37,224 - pipeline - INFO - [0197.139s - 0198.175s] SPEAKER_00: یہ تو وہ ہی بتائیں گے
+2025-10-02 15:42:37,225 - pipeline - INFO - ⏳ Transcribing segment 69...
+2025-10-02 15:42:38,066 - pipeline - INFO - [0198.175s - 0201.316s] SPEAKER_01: اچھا وہ فون بھی نہیں اٹھا رہے ہیں نا گائی صاحب میں چلیں دوبارہ ان سے راہ کریں
+2025-10-02 15:42:38,066 - pipeline - INFO - ⏳ Transcribing segment 70...
+2025-10-02 15:42:38,739 - pipeline - INFO - [0200.772s - 0202.742s] SPEAKER_00: بھائی آج سنڈے ہے نا
+2025-10-02 15:42:38,741 - pipeline - INFO - ⏳ Transcribing segment 71...
+2025-10-02 15:42:39,645 - pipeline - INFO - [0202.742s - 0205.866s] SPEAKER_01: بھائی یہ بلکل ٹھیک ہے، چلے میں ان کو تھوڑی دفعہ دوبارہ ٹرائے کر لیتا ہوں سر
+2025-10-02 15:42:39,646 - pipeline - INFO - ⏳ Transcribing segment 72...
+2025-10-02 15:42:40,308 - pipeline - INFO - [0206.002s - 0207.937s] SPEAKER_00: آپ زہر کے ٹائم ٹرائی کریئے گا
+2025-10-02 15:42:40,309 - pipeline - INFO - ⏳ Transcribing segment 73...
+2025-10-02 15:42:42,790 - pipeline - INFO - [0207.937s - 0210.127s] SPEAKER_01: ٹھیک ہے سر ٹھیک ہے، �
+2025-10-02 15:42:42,791 - pipeline - INFO - ⏳ Transcribing segment 74...
+2025-10-02 15:42:43,308 - pipeline - INFO - [0209.431s - 0210.008s] SPEAKER_00: بھلات
+2025-10-02 15:42:43,309 - pipeline - INFO - 
+✓ Pipeline completed successfully!
+2025-10-02 15:42:43,312 - api - INFO - Pipeline completed for job: 9ae22dd5-2eb3-481c-8561-62418e901c3f
